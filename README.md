@@ -1,19 +1,16 @@
-# React JWT Auth Template
+# React Hoot Notes
 
-## About
+## HootList
 
-This repo is a React JWT Auth template meant to be paired with a back-end app utilizing JWT tokens.
+list -> fetch -> map JSX
 
-## Getting started
+- useState -> App
+- service
 
-Fork and clone this repository to your local machine.
+## Lifting state
 
-After moving into the cloned directory, run `npm i` to download the dependencies.
+- App (state -> hoots + addToHoots -> fetch -> POST)
+  - HootForm -> addToHoots as props
+  - HootsList -> hoots as props
 
-Create a `.env` file in the root of the project and add the following:
-
-```plaintext
-VITE_BACK_END_SERVER_URL=http://localhost:3000
-```
-
-Start the app with `npm run dev`.
+`/hoots/:hootId/comments/new`
